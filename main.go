@@ -7,29 +7,26 @@
 
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func main() {
-	var numRows int
+func main()  {
+    // number of rows
+	  var numRows int
+	  fmt.Print("How many rows would you like? ")
+	  fmt.Scan(&numRows)
 
-	// number of rows
-	fmt.Print("How many rows would you like? ")
-	fmt.Scan(&numRows)
+	  // outer loop
+	  for i := 1; i <= numRows; i++ {
+		    rowString := ""
 
-	// outer loop
-	for i := 1; i <= numRows; i++ {
-		rowString := ""
+		    // inner loop
+		    for j := 1; j <= i; j++ {
+			      rowString += fmt.Sprint(j) + " "
+		    }
 
-		// inner loop
-		for j := 1; j <= i; j++ {
-			rowString += fmt.Sprint(j) + " "
-		}
+		    // output
+		    fmt.Println(rowString)
+	  }
 
-		// output
-		fmt.Println(rowString)
-	}
-
-	fmt.Println("Done.")
+	  fmt.Println("Done.")
 }
