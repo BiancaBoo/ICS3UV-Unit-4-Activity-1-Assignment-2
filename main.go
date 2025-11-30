@@ -10,16 +10,28 @@ package main
 import "fmt"
 
 func main() {
+	// variables
+	var numRowsString string
 	var numRows int
 
+	// number of rows
 	fmt.Print("How many rows would you like? ")
-	fmt.Scan(&numRows)
+	fmt.Scan(&numRowsString) // Go requires string input first
 
+	// convert string
+	fmt.Sscan(numRowsString, &numRows)
+
+	// outer loop
 	for i := 1; i <= numRows; i++ {
+		rowString := ""
+
+		// inner loop
 		for j := 1; j <= i; j++ {
-			fmt.Print(j, " ")
+			rowString += fmt.Sprintf("%d ", j)
 		}
-		fmt.Println()
+
+		// output
+		fmt.Println(rowString)
 	}
 
 	fmt.Println("Done.")
