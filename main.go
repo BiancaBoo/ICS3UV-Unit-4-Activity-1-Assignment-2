@@ -1,12 +1,12 @@
 // Author: Bianca Boo
-// Version 1.0.0
-// Date 2025-11-30
+// Version: 1.0.0
+// Date: 2025-11-30
 // fileoverview: This program uses nested loop to print a pattern of numbers.
 
 package main
 
 import (
-		"fmt"
+	"fmt"
 )
 
 func main() {
