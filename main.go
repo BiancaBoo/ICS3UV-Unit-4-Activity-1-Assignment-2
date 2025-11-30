@@ -9,24 +9,25 @@ package main
 
 import "fmt"
 
-func main()  {
-    // number of rows
-	  var numRows int
-	  fmt.Print("How many rows would you like? ")
-	  fmt.Scan(&numRows)
+func main() {
+	var numRows int
 
-	  // outer loop
-	  for i := 1; i <= numRows; i++ {
-		    rowString := ""
+	// number of rows
+	fmt.Print("How many rows would you like? ")
+	fmt.Scan(&numRows)
 
-		    // inner loop
-		    for j := 1; j <= i; j++ {
-			      rowString += fmt.Sprint(j) + " "
-		    }
+	// outer loop
+	for i := 1; i <= numRows; i++ {
+		rowString := ""
 
-		    // output
-		    fmt.Println(rowString)
-	  }
+		// inner loop
+		for j := 1; j <= i; j++ {
+			rowString += fmt.Sprint(j) + " "
+		}
 
-	  fmt.Println("Done.")
+		// output
+		fmt.Println(rowString)
+	}
+
+	fmt.Println("Done.")
 }
