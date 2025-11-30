@@ -5,6 +5,7 @@
  * @fileoverview This program uses nested loop to print a pattern of numbers.
  */
 
+// package main prints pattern using nested loop
 package main
 
 import (
@@ -24,7 +25,7 @@ func main() {
 
 		// inner loop
 		for j := 1; j <= i; j++ {
-			rowString += fmt.Sprint(j) + " "
+			rowString += fmt.Sprintf("%d ", j)
 		}
 
 		// output
