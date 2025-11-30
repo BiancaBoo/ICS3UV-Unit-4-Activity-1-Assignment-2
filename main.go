@@ -1,11 +1,8 @@
-/**
- * @author Bianca Boo
- * @version 1.0.0
- * @date 2025-11-30
- * @fileoverview This program uses nested loop to print a pattern of numbers.
- */
+// Author: Bianca Boo
+// Version 1.0.0
+// Date 2025-11-30
+// fileoverview: This program uses nested loop to print a pattern of numbers.
 
-// This program prints a pattern of numbers using nested loops.
 package main
 
 import "fmt"
