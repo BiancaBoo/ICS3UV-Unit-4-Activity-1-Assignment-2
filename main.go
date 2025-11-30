@@ -16,11 +16,10 @@ func main() {
 	fmt.Scan(&numRows)
 
 	for i := 1; i <= numRows; i++ {
-		rowString := ""
 		for j := 1; j <= i; j++ {
-			rowString += fmt.Sprintf("%d ", j)
+			fmt.Print(j, " ")
 		}
-		fmt.Println(rowString)
+		fmt.Println()
 	}
 
 	fmt.Println("Done.")
