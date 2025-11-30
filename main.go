@@ -5,12 +5,12 @@
  * @fileoverview This program uses nested loop to print a pattern of numbers.
  */
 
+// This program prints a pattern of numbers using nested loops.
 package main
 
 import "fmt"
 
 func main() {
-	
 	var numRows int
 
 	// number of rows
