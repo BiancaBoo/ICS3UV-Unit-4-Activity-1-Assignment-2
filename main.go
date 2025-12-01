@@ -5,7 +5,10 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	var numRows int
@@ -14,13 +17,13 @@ func main() {
 	fmt.Scan(&numRows)
 
 	for i := 1; i <= numRows; i++ {
-		rowString := ""
+		var sb strings.Builder // Use strings.Builder for efficiency
 
 		for j := 1; j <= i; j++ {
-			rowString += fmt.Sprintf("%d ", j)
+			sb.WriteString(fmt.Sprintf("%d ", j))
 		}
 
-		fmt.Println(rowString)
+		fmt.Println(sb.String())
 	}
 
 	fmt.Println("Done.")
